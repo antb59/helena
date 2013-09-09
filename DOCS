@@ -1,0 +1,3 @@
+Envoyer une command sur le Web Service :
+
+curl -i -X POST -H 'Content-Type: application/json' -d '{"name": "New Wine", "year": "2009"}' http://$IP:$PORT/command
