@@ -1,0 +1,1 @@
+{"ts":1378731259026,"silentsave":true,"restoring":false,"patch":[[{"diffs":[[1,"extends layout\n\nblock body\n  div\n    <p>1 + 2 = {{ 1 + 2 }}</p>\n    h2 My Blog\n    ul\n      li\n        a(href='/') Home\n      li\n        a(href='/addPost') Add a new post\n\n    div(ng-view)\n\n"]],"start1":0,"start2":0,"length1":0,"length2":190}]],"length":190}

@@ -1,0 +1,1 @@
+{"ts":1378731255151,"silentsave":true,"restoring":false,"patch":[[{"diffs":[[1,"exports.index = function(req, res){\n  res.render('index');\n};\n\nexports.partials = function (req, res) {\n  var name = req.params.name;\n  res.render('partials/' + name);\n};"]],"start1":0,"start2":0,"length1":0,"length2":170}]],"length":170}

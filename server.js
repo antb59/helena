@@ -1,6 +1,7 @@
 var express = require('express'),
     index = require('./routes/index'),
-    commands = require('./routes/commands');
+    commands = require('./routes/commands'),
+    path = require('path');
 
 console.log('Starting Server...')
 
@@ -15,7 +16,8 @@ app.configure(function () {
         });
         app.use(express.bodyParser());
         app.use(express.methodOverride());
-        app.use(express.static(__dirname + '/public'));
+        app.use(express.static(path.join(__dirname, 'public')));
+        app.use(app.router);
 });
 
 app.get('/api/help', function(req, res) {
