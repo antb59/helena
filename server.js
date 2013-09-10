@@ -1,5 +1,6 @@
 var express = require('express'),
     index = require('./routes/index'),
+    todo = require('./routes/todo'),
     commands = require('./routes/commands'),
     path = require('path');
 
@@ -28,7 +29,7 @@ app.get('/api/status', function(req, res) {
 });
 app.post('/api/command', commands.executeCommand);
 
-app.get('/partials/:name', index.partials);
+app.get('/todo', todo.todo)
 app.get('*', index.index);
 
 app.listen(process.env.PORT,process.env.IP);
